@@ -834,7 +834,7 @@ TRY IT ... with or without CENTER CENTER
 
 /*
 ---------------------------------------------
-about
+skills
 ---------------------------------------------
 */
 
@@ -952,7 +952,7 @@ services
 .service-item {
   cursor: pointer;
   display: block;
-  background-image: url("");
+  background-image: url("https://github.com/paupedra/paupedra/blob/webpage/assets/images/pau_pedra.png");
   box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.1);
   padding: 40px 30px;
   text-align: center;
