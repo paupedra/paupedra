@@ -951,16 +951,72 @@ services
 
 .service-item {
   cursor: pointer;
-  display: block;
-  background-image: url("https://github.com/paupedra/paupedra/blob/webpage/assets/images/pau_pedra.png");
+  display:block;
+  background-image: url("https://github.com/paupedra/paupedra/blob/webpage/docs/assets/images/pau_pedra.png?raw=true");
+  background-size:contain;
+  background-origin:border-box;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 200px;
+  width: 400px;
   box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.1);
-  padding: 40px 30px;
+  padding: 0px 0px;
   text-align: center;
   -webkit-transition: all 0.3s ease 0s;
   -moz-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   position: relative;
+}
+
+.service-item-wrap{
+  background: rgba(134, 132, 132, 0.72);
+  visibility: hidden;
+  opacity: 0;
+  height: 200px;
+  width: 400px;
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.service-item-title {
+  font-weight: 500;
+  font-size: 18px;
+  color: #1e1e1e;
+  letter-spacing: 0.7px;
+  margin-bottom: 15px;
+  position: relative;
+  z-index: 2;
+
+  visibility: hidden;
+  opacity: 0;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.service-item-description {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color:white;
+  font-size: 20px;
+  
+  visibility: hidden;
+  opacity: 0;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.service-item:hover .service-item-description,
+.service-item:hover .service-item-title,
+.service-item:hover .service-item-description,
+.service-item:hover .service-item-wrap{
+  visibility: visible;
+  opacity: 1;
 }
 
 @media screen and (max-width: 920px) {
@@ -971,45 +1027,10 @@ services
 
 .service-item:hover .icon,
 .service-item:hover a.main-button {
-  background-color: #0088e8;
+  background-color: #426a86;
 }
 
-.service-item .icon {
-  text-align: center;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
-  width: 100px;
-  height: 100px;
-  line-height: 100px;
-  margin: auto;
-  position: relative;
-  margin-bottom: 30px;
-  background: #00b4c6;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  border-radius: 50%;
-  position: relative;
-}
 
-.service-item .icon img {
-  max-width: 50px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.service-item .service-title {
-  font-weight: 500;
-  font-size: 18px;
-  color: #1e1e1e;
-  letter-spacing: 0.7px;
-  margin-bottom: 15px;
-  position: relative;
-  z-index: 2;
-}
 
 .service-item p {
   font-weight: 400;
