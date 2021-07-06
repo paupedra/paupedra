@@ -238,7 +238,7 @@ a.main-button {
   font-size: 13px;
   border-radius: 20px;
   padding: 12px 20px;
-  background-color: #00b4c6;
+  background-color: #2e2e2e;
   text-transform: uppercase;
   color: #fff;
   letter-spacing: 0.25px;
@@ -249,7 +249,7 @@ a.main-button {
 }
 
 a.main-button:hover {
-  background-color: #0088e8;
+  background-color: #cecece;
 }
 
 button.main-button {
@@ -918,15 +918,15 @@ services
   background: -webkit-gradient(
     left top,
     right bottom,
-    color-stop(0%, rgba(0, 136, 232, 1)),
-    color-stop(0%, rgba(0, 182, 198, 1)),
-    color-stop(100%, rgba(0, 136, 232, 1))
+    color-stop(0%, rgb(218, 218, 218)),
+    color-stop(0%, rgb(105, 105, 105)),
+    color-stop(100%, rgb(48, 48, 48))
   );
   background: -webkit-linear-gradient(
     -45deg,
-    rgba(0, 136, 232, 1) 0%,
-    rgba(0, 182, 198, 1) 0%,
-    rgba(0, 136, 232, 1) 100%
+    rgb(201, 201, 201) 0%,
+    rgb(139, 139, 139) 0%,
+    rgb(87, 87, 87) 100%
   );
   background: -o-linear-gradient(
     -45deg,
@@ -942,17 +942,17 @@ services
   );
   background: linear-gradient(
     135deg,
-    rgba(0, 136, 232, 1) 0%,
-    rgba(0, 182, 198, 1) 0%,
-    rgba(0, 136, 232, 1) 100%
+    rgb(201, 201, 201) 0%,
+    rgb(124, 124, 124) 0%,
+    rgb(75, 75, 75) 100%
   );
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0088e8', endColorstr='#0088e8', GradientType=1 );
 }
 
-.service-item {
+.project-item {
   cursor: pointer;
   display:block;
-  background-image: url("https://github.com/paupedra/paupedra/blob/webpage/docs/assets/images/pau_pedra.png?raw=true");
+  background-image: url("https://github.com/paupedra/paupedra/blob/webpage/docs/assets/images/the_mandalorian_image.png?raw=true");
   background-size:contain;
   background-origin:border-box;
   background-repeat: no-repeat;
@@ -969,7 +969,7 @@ services
   position: relative;
 }
 
-.service-item-wrap{
+.project-item-wrap{
   background: rgba(134, 132, 132, 0.72);
   visibility: hidden;
   opacity: 0;
@@ -979,13 +979,27 @@ services
   transition: opacity .2s, visibility .2s;
 }
 
-.service-item-title {
+.project-item-title-wrap {
+  
+  background-color: #252525;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 2;
+  height: 30px;
+  visibility: hidden;
+  opacity: 0;
+
+  /* transition effect. not necessary */
+  transition: opacity .2s, visibility .2s;
+}
+
+.project-item-title {
   font-weight: 500;
   font-size: 18px;
-  color: #1e1e1e;
+  color: #f3f3f3;
   letter-spacing: 0.7px;
-  margin-bottom: 15px;
-  position: relative;
+  line-height: 30px;
+  position:relative;
   z-index: 2;
 
   visibility: hidden;
@@ -995,15 +1009,17 @@ services
   transition: opacity .2s, visibility .2s;
 }
 
-.service-item-description {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+.project-item-description {
+  font-weight: 400;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+  line-height: 25px;
   color:white;
-  font-size: 20px;
-  
+
+  position: relative;
+  z-index: 2;
+  position: absolute;
+ 
   visibility: hidden;
   opacity: 0;
 
@@ -1011,39 +1027,28 @@ services
   transition: opacity .2s, visibility .2s;
 }
 
-.service-item:hover .service-item-description,
-.service-item:hover .service-item-title,
-.service-item:hover .service-item-description,
-.service-item:hover .service-item-wrap{
+.project-item:hover .project-item-description,
+.project-item:hover .project-item-title,
+.project-item:hover .project-item-title-wrap,
+.project-item:hover .project-item-description,
+.project-item:hover .project-item-wrap{
   visibility: visible;
   opacity: 1;
 }
 
 @media screen and (max-width: 920px) {
-  .service-item {
+  .project-item {
     margin: 0px 30px !important;
   }
 }
 
-.service-item:hover .icon,
-.service-item:hover a.main-button {
-  background-color: #426a86;
+.project-item:hover .icon,
+.project-item:hover a.main-button {
+  background-color: #5f5f5f;
 }
 
-
-
-.service-item p {
-  font-weight: 400;
-  font-size: 13px;
-  color: #777;
-  letter-spacing: 0.5px;
-  line-height: 25px;
-  position: relative;
-  z-index: 2;
-}
-
-.service-item a.main-button {
-  margin-top: 30px;
+.project-item a.main-button {
+  margin-top: 70px;
   display: inline-block;
 }
 
