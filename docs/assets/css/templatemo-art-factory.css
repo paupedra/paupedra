@@ -952,7 +952,7 @@ services
 .project-item {
   cursor: pointer;
   display:block;
-  background-image: url("https://github.com/paupedra/paupedra/blob/webpage/docs/assets/images/the_mandalorian_image.png?raw=true");
+  /* background-image: url("https://github.com/paupedra/paupedra/blob/webpage/docs/assets/images/the_mandalorian_image.png?raw=true"); */
   background-size:contain;
   background-origin:border-box;
   background-repeat: no-repeat;
@@ -967,6 +967,22 @@ services
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   position: relative;
+}
+
+.project-item.mandalorian {
+  background-image: url("https://github.com/paupedra/paupedra/blob/webpage/docs/assets/images/the_mandalorian_image.png?raw=true");
+}
+
+.project-item.mandalorian {
+  background-image: url("https://github.com/paupedra/paupedra/blob/webpage/docs/assets/images/the_mandalorian_image.png?raw=true");
+}
+
+.project-item.mandalorian {
+  background-image: url("https://github.com/paupedra/paupedra/blob/webpage/docs/assets/images/the_mandalorian_image.png?raw=true");
+}
+
+.project-item.mandalorian {
+  background-image: url("https://github.com/paupedra/paupedra/blob/webpage/docs/assets/images/the_mandalorian_image.png?raw=true");
 }
 
 .project-item-wrap{
