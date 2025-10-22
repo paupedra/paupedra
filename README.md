@@ -1,15 +1,12 @@
 ### Welcome to my profile!
 
-My love for videogames has brought me to immerse myself in the world of Game Programming and since I found it I have been fascinated. 
-I love working on games and creating experiences for people to enjoy.
-I consider myself to be a great team player and love bouncing off ideas with others to get the best version of a product as possible.
+My love for videogames has brought me to immerse myself in the world of Game Programming and since I found it I have been fascinated. I love working on games and creating experiences for people to enjoy. I consider myself to be a great team player and love bouncing off ideas with others to get the best version of a product as possible.
 
-My grreatest strenght is my communication skills and teamwork, which makes the dram work!
+My greatest strenght is my communication skills and teamwork, which makes the dream work!
 
 I am versed in C++ lenguage and I have worked on both Gameplay and Engine programming, highlighting the development of a full on Game Engine from scratch.
 
 I have previously worked as Junior Gameplay Programmer at Crytek for 2 and a half years, where I made several changes to gameplay mechanics and engine features.
-
 <!--
 **paupedra/paupedra** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
